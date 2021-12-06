@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="377.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.discountController">
+   <children>
+      <Text fill="#fcf9f9" fontSmoothingType="LCD" layoutX="126.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount" wrappingWidth="125.13671875">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#fcf9f9" fontSmoothingType="LCD" layoutX="23.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter original Price:" wrappingWidth="249.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="23.0" layoutY="107.0" onAction="#inputPrice" promptText="Price" />
+      <Text fill="#fcf9f9" fontSmoothingType="LCD" layoutX="23.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Discount (percentage):" wrappingWidth="249.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="23.0" layoutY="188.0" onAction="#inputDiscount" promptText="Discount" />
+      <Text fill="#fcf9f9" fontSmoothingType="LCD" layoutX="23.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Price:" wrappingWidth="249.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="result2" layoutX="23.0" layoutY="265.0" onAction="#inputDiscount" prefHeight="50.0" prefWidth="149.0" promptText="Discount" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
